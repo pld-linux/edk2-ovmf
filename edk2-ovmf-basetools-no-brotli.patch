@@ -1,0 +1,10 @@
+--- edk2-edk2-stable202608/BaseTools/Source/C/GNUmakefile.orig	2026-08-01 11:28:22.813753232 +0200
++++ edk2-edk2-stable202608/BaseTools/Source/C/GNUmakefile	2026-08-01 11:28:33.386789396 +0200
+@@ -23,7 +23,6 @@
+ 
+ LIBRARIES = Common
+ APPLICATIONS = \
+-  BrotliCompress \
+   VfrCompile \
+   EfiRom \
+   GenFfs \
