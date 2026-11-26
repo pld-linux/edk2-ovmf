@@ -1,7 +1,7 @@
 # NOTE: the firmware itself is compiled with edk2's own toolchain flags
 # (BaseTools/Conf/tools_def.template, GCC tag); %%{rpmcflags} only reach
 # the BaseTools host utilities.
-%define		edk2ver		202608
+%define		edk2ver		202611
 # CryptoPkg/Library/OpensslLib/openssl submodule commit at edk2-stable%%{edk2ver} (OpenSSL 3.5.7)
 %define		openssl_commit	8cf17aaeb4599f8af87fefd810b5b5fee90fe69e
 # Microsoft DBX (revocation list) release, https://github.com/microsoft/secureboot_objects
@@ -14,7 +14,7 @@ Release:	1
 License:	BSD+patent (firmware), Apache v2.0 (bundled OpenSSL)
 Group:		Applications/System
 Source0:	https://github.com/tianocore/edk2/archive/refs/tags/edk2-stable%{edk2ver}.tar.gz
-# Source0-md5:	02735bb4c949f027310c26e541f52c78
+# Source0-md5:	e25ee58c4a93473df197c0c560ea241d
 Source1:	https://github.com/openssl/openssl/archive/%{openssl_commit}/openssl-8cf17aa.tar.gz
 # Source1-md5:	ed255b58a1657618d6de5c57578b59cc
 # qemu firmware descriptors (docs/interop/firmware.json), used by libvirt
